@@ -5,7 +5,7 @@ To setup Grails to use an HTTP proxy there are two steps. Firstly you need to co
 export GRAILS_OPTS="-Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=3128 -Dhttp.proxyUser=test -Dhttp.proxyPassword=test"
 ----
 
-NOTE: The default profile repository is resolved over HTTPS so `https.proxyPort` and `https.proxyUser` are used, however the username and password are specified with `http.proxyUser` and `http.proxyPassword`
+NOTE: The default profile repository is resolved over HTTPS so `https.proxyHost` and `https.proxyPort` are used, however the username and password are specified with `http.proxyUser` and `http.proxyPassword`
 
 For Windows systems the environment variable can be configured under `My Computer/Advanced/Environment Variables`.
 
